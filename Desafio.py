@@ -1,31 +1,5 @@
-# =====================================================================
-# MESA DE PARTES DIGITAL - IEI N°084 "VIRGEN MARÍA"
-# Curso: Fundamentos de Programación (CIIN1205P)
-#
-# ¿Qué hace el programa?
-#   1. Registra expedientes (inscripción o traslado)
-#   2. Valida los datos ingresados
-#   3. Busca un expediente por su código
-#   4. Ordena y muestra todos los expedientes
-#   5. Guarda y carga los datos desde un archivo de texto
-#
-# ¿Cómo guarda los datos en memoria?
-#   Con ARREGLOS PARALELOS (listas): la posición i de cada lista
-#   pertenece al MISMO expediente. Ejemplo, el expediente 0 es:
-#   codigos[0], dnis[0], apoderados[0], alumnos[0], tramites[0]
-# =====================================================================
-
-# --- Constantes globales ---------------------------------------------
-RUTA = "expedientes.txt"   # archivo donde se guardan los datos (persistencia)
-MAX = 100                  # capacidad máxima de expedientes del prototipo
-
-
-# =====================================================================
-# PERSONA 2: VALIDACIONES
-# Cada función recibe un texto (cadena) y devuelve True si es válido
-# o False si no lo es. Así se evitan datos incompletos o ilegibles.
-# =====================================================================
-
+RUTA = "expedientes.txt"   
+MAX = 100                  
 def validar_dni(dni):
     # isdigit() -> True si TODOS los caracteres son números
     # len(dni) == 8 -> el DNI peruano tiene exactamente 8 dígitos
