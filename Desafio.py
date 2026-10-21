@@ -1,3 +1,4 @@
+# mesa_de_partes.py - Mesa de Partes Digital IEI N°084 "Virgen María"
 RUTA = "expedientes.txt"   
 MAX = 100                  
 def validar_dni(dni):
